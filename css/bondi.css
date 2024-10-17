@@ -1,0 +1,203 @@
+/* Start Navbar */
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+body {
+    font-family: "roboto", sans-serif;
+    height: 1000px;
+}
+.main-btn {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.main-title::after {
+    position: absolute;
+    content:'';
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main-btn:hover {
+    color: var(--yellow-color);
+}
+.navbar {
+    background-color: var(--dark-color);
+    color: #fff;
+}
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus {
+    color: var(--green-color);
+}
+.navbar .navbar-toggler svg{
+    color: #fff;
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar .search svg {
+    color: var(--green-color);
+    border-left: 1px solid var(--green-color);
+}
+@media(max-width: 991px){
+
+    .navbar .navbar-collapse {
+        position: relative;
+    }
+
+    .navbar .search svg {
+        position: absolute;
+        top: 15px;
+        left: calc(100% - 48px);
+        color: #fff;
+        border-left: 1px solid #fff;
+
+    }
+}
+/* End Navbar */
+/* Start Landing */
+.landing {
+    min-height: calc(100vh - 72px);
+    background-color: var(--dark-color);
+}
+/* End Landing */
+/* Start Features */
+.features .row .icon-holder {
+    height: 200px;
+}
+.features .row .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .row .icon-holder .number {
+    color: var(--section-color);
+    font-size: 12rem;
+}
+.features .row .icon-holder .icon {
+    color: var(--green-color);
+}
+.features .row > div h4 {
+    color: var(--yellow-color);
+}
+/* end Features */
+/* Start Our Works */
+.works {
+    background-color: var(--section-color);
+}
+.works .category .btn:hover:not(:first-child) {
+    color: var(--red-color)
+}
+.works .row .box {
+    position: relative;
+    padding: 5px;
+    overflow: hidden;
+}
+.works .row .box::before{
+    position: absolute;
+    content:attr(data-work);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: #33d1ccb5;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(calc(-100% - 6px));
+    transition: 0.3s;
+}
+.works .row .box:hover::before {
+    transform: translateX(0);
+}
+/* End Our Works */
+/* Start Stuff */
+.stuff .container p {
+    margin: 1rem auto;
+    max-width: 500px;
+    text-align: center;
+}
+/* End Stuff */
+/* Star Team */
+.team {
+    background-color: var(--section-color);
+}
+.team h2 {
+    color: var(--yellow-color);
+}
+.team h4 {
+    background-color: var(--green-color);
+}
+/* End Team */
+/* Start Tech */
+/* End Tech */
+/* Start Project */
+.project {
+    background-color: var(--dark-color);
+}
+/* End Project */
+/* Start Blog */
+/* End Blog */
+/* Start Subscribe */
+.subscribe {
+    background-color: var(--yellow-color);
+}
+.subscribe .row input {
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+.subscribe .row input::placeholder {
+    color: white;
+}
+.subscribe .row input:focus {
+    outline: none;
+}
+.subscribe .row .subscribe {
+    color: var(--yellow-color);
+    background-color: var(--dark-color);
+    border: none;
+}
+/* End Subscribe */
+/* Start Footer */
+.footer {
+    background-color: var(--dark-color);
+}
+.footer .green {
+    color: var(--green-color);
+}
+.footer .row .icon > a {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.footer .row .icon > a svg {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+.footer .row .icon .linkedin {background-color: #0077B5}
+.footer .row .icon .facebook {background-color: #1877F2}
+.footer .row .icon .twitter {background-color: #1DA1F2}
+.footer .row .icon .youtube {background-color: #FF0000}
+/* End Footer */
+
+
+
+
+
+
